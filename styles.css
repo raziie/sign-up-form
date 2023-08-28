@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     padding: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .left-container {}
@@ -26,18 +27,31 @@ body {
     background-color: hsl(248, 32%, 49%);
 }
 
+.white-box {
+    background-color: white;
+}
+
 input {
     border: 1px solid hsl(246, 25%, 77%);
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn {
     background-color: hsl(154, 59%, 51%);
     border: none;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .note {
     color: hsl(246, 25%, 77%);
+}
+
+.terms {
+    color: hsl(0, 100%, 74%);
 }
 
 @media (max-width: 600px) {
