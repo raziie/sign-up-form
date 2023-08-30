@@ -60,6 +60,7 @@ input {
     border: 1px solid hsl(246, 25%, 77%);
     padding: 15px;
     margin: 10px;
+    margin-bottom: 0px;
     border-radius: 5px;
     width: 400px;
 }
@@ -97,6 +98,27 @@ input::placeholder {
 
 .terms {
     color: hsl(0, 100%, 74%);
+}
+
+.wrong {
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url("./images/icon-error.svg");
+    background-position: 390px 10px;
+    background-repeat: no-repeat;
+}
+
+.correct {
+    border: 2px solid hsl(113, 37%, 56%);
+}
+
+.msg {
+    margin: 0px;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(0, 93%, 68%);
 }
 
 @media (max-width: 600px) {
@@ -139,5 +161,9 @@ input::placeholder {
 
     .right-container {
         margin: 0px;
+    }
+
+    .wrong {
+        background-position: 250px 10px;
     }
 }
